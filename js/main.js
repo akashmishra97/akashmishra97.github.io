@@ -99,27 +99,43 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Form submission handling
+    // Contact Form Handling
+    const formStatus = document.getElementById('form-status');
+    
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
             
-            // Get form values
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const subject = document.getElementById('subject').value;
-            const message = document.getElementById('message').value;
+            const formData = new FormData(contactForm);
+            const formAction = contactForm.getAttribute('action');
             
-            // Basic form validation
-            if (!name || !email || !subject || !message) {
-                alert('Please fill in all fields');
-                return;
-            }
+            // Show sending message
+            formStatus.innerHTML = '<p class="sending">Sending message...</p>';
+            formStatus.style.display = 'block';
             
-            // Here you would typically send the form data to a server
-            // For now, we'll just show a success message
-            alert('Thank you for your message! I will get back to you soon.');
-            contactForm.reset();
+            fetch(formAction, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+            .then(response => {
+                if (response.ok) {
+                    return response.json();
+                }
+                throw new Error('Network response was not ok.');
+            })
+            .then(data => {
+                // Success message
+                formStatus.innerHTML = '<p class="success">Message sent successfully! I\'ll get back to you soon.</p>';
+                contactForm.reset();
+            })
+            .catch(error => {
+                // Error message
+                formStatus.innerHTML = '<p class="error">Oops! There was a problem sending your message. Please try again or email me directly.</p>';
+                console.error('Error:', error);
+            });
         });
     }
 

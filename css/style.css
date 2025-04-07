@@ -1000,45 +1000,36 @@ p {
     border-color: var(--accent-color);
 }
 
+.form-status {
+    margin-top: var(--spacing-md);
+    padding: var(--spacing-sm);
+    border-radius: var(--border-radius-sm);
+    display: none;
+}
+
+.form-status .sending {
+    color: var(--text-color);
+}
+
+.form-status .success {
+    color: #28a745;
+}
+
+.form-status .error {
+    color: #dc3545;
+}
+
 /* ===== Footer ===== */
-footer {
+#footer {
     background-color: var(--secondary-color);
     padding: var(--spacing-md) 0;
-    margin-top: var(--spacing-xl);
+    text-align: center;
 }
 
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.footer-links {
-    display: flex;
-    gap: var(--spacing-md);
-}
-
-.back-to-top {
-    display: flex;
-    justify-content: center;
-    margin-top: var(--spacing-md);
-}
-
-.back-to-top a {
-    background-color: var(--accent-color);
-    color: white;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color var(--transition-fast), transform var(--transition-fast);
-}
-
-.back-to-top a:hover {
-    background-color: var(--text-color);
-    transform: translateY(-3px);
+#footer p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--text-color-light);
 }
 
 /* ===== Responsive Design ===== */
