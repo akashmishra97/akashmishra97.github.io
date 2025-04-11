@@ -735,6 +735,7 @@ p {
     opacity: 0;
     transition: opacity var(--transition-fast);
     z-index: 1;
+    pointer-events: none;
 }
 
 .project-card:hover {
@@ -765,6 +766,20 @@ p {
 .project-links {
     display: flex;
     gap: var(--spacing-sm);
+    position: relative;
+    z-index: 10;
+}
+
+.project-links a.btn {
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+.project-links a.btn:hover {
+    background-color: var(--accent-color);
+    color: white;
 }
 
 /* ===== Skills Section ===== */

@@ -47,7 +47,6 @@
                     <p>Building elegant solutions to complex problems</p>
                     <div class="hero-cta">
                         <a href="#contact" class="btn btn-primary">Get in touch</a>
-                        <a href="#projects" class="btn btn-secondary">View my work</a>
                     </div>
                     <div class="hero-social-icons">
                         <div class="social-icons-container">
@@ -229,7 +228,7 @@
                         <h3>Master of Science, Business Analytics & Information Systems</h3>
                         <h4>University of South Florida, FL, USA</h4>
                         <p class="education-date">Graduated: May 2024</p>
-                        <p>Courses: Data Mining, Data Science Programming, Machine Learning, Big Data, Advanced Database, Data Warehousing, Analytical Methods</p>
+                        <p>Courses: Data Mining, Big Data for Business, Data Science Programming, Enterprise Information Systems, Analytical Methods for Business, Advanced System Analysis and Design, Advanced Database Management Systems, Distributed Information Systems, Data Warehousing, Enterprise Resource Management, Project Management</p>
                     </div>
                 </div>
                 <div class="education-item">
@@ -249,12 +248,12 @@
                     <div class="education-content">
                         <h3>Certifications</h3>
                         <ul class="certification-list">
-                            <li>Databricks Data Engineer</li>
-                            <li>Azure AZ900</li>
-                            <li>Oracle Generative AI Professional</li>
-                            <li>Airflow</li>
-                            <li>Tableau</li>
-                            <li>Product Analytics</li>
+                            <li><a href="https://credentials.databricks.com/89380787-7258-4fd1-84b7-d6968172fe61#acc.l1seTqRH" target="_blank">Databricks Data Engineer</a></li>
+                            <li><a href="https://www.credly.com/users/akash-mishra.59299109" target="_blank">Azure AZ900</a></li>
+                            <li><a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=F320348370555767F2EFF888E76572A7B2D0068A5C774A4086D167821825C3C8" target="_blank">Oracle Generative AI Professional</a></li>
+                            <li><a href="https://www.credly.com/badges/7ec87133-0ee5-4094-88c3-6297c2b92b38/email" target="_blank">Product Analytics</a></li>
+                            <li><a href="https://www.credly.com/badges/6c80b385-c798-439c-af1d-46dd13a38459" target="_blank">Tableau</a></li>
+                            <li><a href="https://globalai.community/badges/c1dcc357-5e7c-41ea-a074-230b27e146a2/" target="_blank">Microsoft Global AI Bootcamp</a></li>
                         </ul>
                     </div>
                 </div>
@@ -273,59 +272,115 @@
                 <button class="filter-btn" data-filter="ml">Machine Learning</button>
             </div>
             <div class="projects-grid">
-                <div class="project-card" data-category="data">
+                <div class="project-card" data-category="ml" onclick="window.open('https://github.com/akashmishra97/Chat_With_Videos_Using_AI', '_blank');" style="cursor: pointer;">
                     <div class="project-info">
-                        <h3>Azure Databricks ETL Pipeline</h3>
-                        <p>Designed a multi-layered ETL pipeline in Azure Databricks for Adventure Works Company, integrating Azure Data Lake Storage for analytics with secure, role-based data access and governance.</p>
+                        <h3>Video Analysis and Chat Application</h3>
+                        <p>AI-powered application that analyzes videos using Google's Gemini 2.0 Flash model, extracting detailed information including timestamps, objects, text, and transcripts. Enables natural language querying of video content through a vector database (ChromaDB).</p>
+                        <div class="project-tech">
+                            <span>Google Gemini</span>
+                            <span>ChromaDB</span>
+                            <span>Vector Search</span>
+                        </div>
+                        <div class="project-links">
+                            <span class="btn btn-sm">View Project <i class="fas fa-external-link-alt"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="ml" onclick="window.open('https://github.com/akashmishra97/Risk-Management-for-Insurance-Companies-using-ML-algorithms', '_blank');" style="cursor: pointer;">
+                    <div class="project-info">
+                        <h3>Risk Management for Insurance Companies</h3>
+                        <p>Data mining project focused on predicting company bankruptcy using financial ratios and indicators. Developed predictive models to accurately assess financial risk, enabling insurance companies to make informed decisions about potential clients.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Machine Learning</span>
+                            <span>Financial Analysis</span>
+                        </div>
+                        <div class="project-links">
+                            <span class="btn btn-sm">View Project <i class="fas fa-external-link-alt"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="data" onclick="window.open('https://github.com/akashmishra97/Twitter-data-pipeline-using-Kafka-PySpark-and-Tableau', '_blank');" style="cursor: pointer;">
+                    <div class="project-info">
+                        <h3>Real-Time Sentiment Analysis Pipeline</h3>
+                        <p>Built a real-time data pipeline using Kafka, PySpark, and MySQL to process Twitter data related to ChatGPT. Implemented sentiment analysis to classify tweets into positive, negative, and neutral categories, with results visualized in Tableau.</p>
+                        <div class="project-tech">
+                            <span>Kafka</span>
+                            <span>PySpark</span>
+                            <span>Tableau</span>
+                        </div>
+                        <div class="project-links">
+                            <span class="btn btn-sm">View Project <i class="fas fa-external-link-alt"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="analytics" onclick="window.open('https://github.com/akashmishra97/Life-Expectancy-Prediction-using-R', '_blank');" style="cursor: pointer;">
+                    <div class="project-info">
+                        <h3>Life Expectancy Prediction</h3>
+                        <p>Analyzed WHO data for 193 countries to identify key factors affecting life expectancy using R. Applied multiple linear regression, evaluated model performance with diagnostic plots, and improved accuracy by addressing multicollinearity through stepwise regression.</p>
+                        <div class="project-tech">
+                            <span>R</span>
+                            <span>Regression Analysis</span>
+                            <span>Data Visualization</span>
+                        </div>
+                        <div class="project-links">
+                            <span class="btn btn-sm">View Project <i class="fas fa-external-link-alt"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="ml" onclick="window.open('https://github.com/akashmishra97/Deep-Learning-Stock-Price-prediction', '_blank');" style="cursor: pointer;">
+                    <div class="project-info">
+                        <h3>Stock Price Prediction</h3>
+                        <p>Developed deep learning models (RNN, LSTM, GRU, Conv1D) to predict Infosys stock closing prices. Implemented data preprocessing, model training, and evaluation using TensorFlow and Keras, with comprehensive performance metrics and visualizations.</p>
+                        <div class="project-tech">
+                            <span>TensorFlow</span>
+                            <span>LSTM</span>
+                            <span>Time Series</span>
+                        </div>
+                        <div class="project-links">
+                            <span class="btn btn-sm">View Project <i class="fas fa-external-link-alt"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="ml" onclick="window.open('https://github.com/akashmishra97/Early-Stage-Diabetes-Risk-Prediction-using-ML', '_blank');" style="cursor: pointer;">
+                    <div class="project-info">
+                        <h3>Early Stage Diabetes Risk Prediction</h3>
+                        <p>Built machine learning models to predict early-stage diabetes risk using patient data from Sylhet Diabetes Hospital. Implemented logistic regression, SVM, decision trees, and neural networks, achieving 98.9% recall with the optimized deep neural network.</p>
+                        <div class="project-tech">
+                            <span>Neural Networks</span>
+                            <span>SVM</span>
+                            <span>Healthcare ML</span>
+                        </div>
+                        <div class="project-links">
+                            <span class="btn btn-sm">View Project <i class="fas fa-external-link-alt"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="analytics" onclick="window.open('https://github.com/akashmishra97/Power-Bi-Oasis-Customer-Support-Analysis', '_blank');" style="cursor: pointer;">
+                    <div class="project-info">
+                        <h3>Customer Support Analysis Dashboard</h3>
+                        <p>Created an interactive Power BI dashboard to analyze customer support data for a consumer electronics company. Visualized key metrics including ticket resolution time, first contact resolution, and customer satisfaction scores with dynamic filtering capabilities.</p>
+                        <div class="project-tech">
+                            <span>Power BI</span>
+                            <span>R</span>
+                            <span>Data Visualization</span>
+                        </div>
+                        <div class="project-links">
+                            <span class="btn btn-sm">View Project <i class="fas fa-external-link-alt"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="data" onclick="window.open('https://github.com/akashmishra97/Adventure-Works-Company-Analytics-and-Data-Governance-using-Azure-Databricks-', '_blank');" style="cursor: pointer;">
+                    <div class="project-info">
+                        <h3>Enterprise Data Governance with Azure Databricks</h3>
+                        <p>Implemented a secure, multi-layered data architecture (Bronze, Silver, Gold) for Adventure Works using Azure Databricks and Unity Catalog. Established role-based access control, row-level security, and centralized metadata management with actionable dashboards.</p>
                         <div class="project-tech">
                             <span>Azure Databricks</span>
                             <span>Unity Catalog</span>
-                            <span>Data Lake</span>
+                            <span>RBAC</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/akashmishra97/azure-databricks-etl" target="_blank" class="btn btn-sm">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card" data-category="analytics">
-                    <div class="project-info">
-                        <h3>Customer Support Analysis Dashboard</h3>
-                        <p>Developed Power BI dashboard to analyze customer support operations using Excel and DAX for data preprocessing, with dynamic visualizations of key metrics like ticket resolution times and customer satisfaction scores.</p>
-                        <div class="project-tech">
-                            <span>Power BI</span>
-                            <span>DAX</span>
-                            <span>Excel</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/akashmishra97/customer-support-analytics" target="_blank" class="btn btn-sm">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card" data-category="ml">
-                    <div class="project-info">
-                        <h3>Risk Management Model</h3>
-                        <p>Implemented machine learning algorithms to predict the likelihood of company bankruptcy, utilizing techniques like data normalization, feature engineering, and hyperparameter tuning. Deployed XGBoost model with a recall score of 0.95.</p>
-                        <div class="project-tech">
-                            <span>Python</span>
-                            <span>XGBoost</span>
-                            <span>Scikit-learn</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/akashmishra97/risk-management-model" target="_blank" class="btn btn-sm">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card" data-category="data">
-                    <div class="project-info">
-                        <h3>Slack AI Agent Integration</h3>
-                        <p>Developed a Slack AI agent using Agno and Gemini to streamline processes and manage channels, improving efficiency by 78% and automating routine tasks for a non-profit organization.</p>
-                        <div class="project-tech">
-                            <span>Agno</span>
-                            <span>Gemini</span>
-                            <span>Slack API</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/akashmishra97/slack-ai-agent" target="_blank" class="btn btn-sm">GitHub</a>
+                            <span class="btn btn-sm">View Project <i class="fas fa-external-link-alt"></i></span>
                         </div>
                     </div>
                 </div>
@@ -341,49 +396,48 @@
                 <div class="skills-category">
                     <h3>Programming Languages</h3>
                     <ul class="skills-list">
-                        <li>Python <span class="skill-tag">Advanced</span></li>
-                        <li>SQL <span class="skill-tag">Advanced</span></li>
-                        <li>R <span class="skill-tag">Intermediate</span></li>
-                        <li>Java <span class="skill-tag">Intermediate</span></li>
-                        <li>JavaScript <span class="skill-tag">Basic</span></li>
+                        <li>Python</li>
+                        <li>SQL</li>
+                        <li>R</li>
+                        <li>Java</li>
+                        <li>JavaScript</li>
                     </ul>
                 </div>
                 
                 <div class="skills-category">
                     <h3>Data Engineering & Cloud</h3>
                     <ul class="skills-list">
-                        <li>PySpark <span class="skill-tag">Advanced</span></li>
-                        <li>Databricks <span class="skill-tag">Advanced</span></li>
-                        <li>ETL/ELT Pipelines <span class="skill-tag">Advanced</span></li>
-                        <li>AWS (S3, Redshift, Lambda) <span class="skill-tag">Advanced</span></li>
-                        <li>Azure (Data Factory, Synapse) <span class="skill-tag">Intermediate</span></li>
-                        <li>Airflow <span class="skill-tag">Intermediate</span></li>
-                        <li>Terraform <span class="skill-tag">Basic</span></li>
+                        <li>PySpark</li>
+                        <li>Databricks</li>
+                        <li>ETL/ELT Pipelines</li>
+                        <li>AWS (S3, Redshift, Lambda)</li>
+                        <li>Azure (Data Factory, Synapse)</li>
+                        <li>Terraform</li>
                     </ul>
                 </div>
                 
                 <div class="skills-category">
                     <h3>AI & Machine Learning</h3>
                     <ul class="skills-list">
-                        <li>LLM Prompt Engineering <span class="skill-tag">Advanced</span></li>
-                        <li>LangChain <span class="skill-tag">Intermediate</span></li>
-                        <li>Generative AI <span class="skill-tag">Intermediate</span></li>
-                        <li>Scikit-learn <span class="skill-tag">Advanced</span></li>
-                        <li>TensorFlow/Keras <span class="skill-tag">Intermediate</span></li>
-                        <li>Natural Language Processing <span class="skill-tag">Intermediate</span></li>
-                        <li>Computer Vision <span class="skill-tag">Basic</span></li>
+                        <li>LLM Prompt Engineering</li>
+                        <li>LangChain</li>
+                        <li>Generative AI</li>
+                        <li>Scikit-learn</li>
+                        <li>TensorFlow/Keras</li>
+                        <li>Natural Language Processing</li>
+                        <li>Computer Vision</li>
                     </ul>
                 </div>
                 
                 <div class="skills-category">
                     <h3>Analytics & Visualization</h3>
                     <ul class="skills-list">
-                        <li>PowerBI <span class="skill-tag">Advanced</span></li>
-                        <li>Tableau <span class="skill-tag">Advanced</span></li>
-                        <li>Pandas <span class="skill-tag">Advanced</span></li>
-                        <li>Statistical Analysis <span class="skill-tag">Advanced</span></li>
-                        <li>A/B Testing <span class="skill-tag">Intermediate</span></li>
-                        <li>Data Storytelling <span class="skill-tag">Advanced</span></li>
+                        <li>PowerBI</li>
+                        <li>Tableau</li>
+                        <li>Pandas</li>
+                        <li>Statistical Analysis</li>
+                        <li>A/B Testing</li>
+                        <li>Data Storytelling</li>
                     </ul>
                 </div>
             </div>

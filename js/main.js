@@ -14,6 +14,18 @@ document.addEventListener('DOMContentLoaded', function() {
     const projectCards = document.querySelectorAll('.project-card');
     const contactForm = document.getElementById('contact-form');
 
+    // Fix for GitHub links in project cards
+    document.querySelectorAll('.project-links a').forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.stopPropagation(); // Prevent event bubbling
+            const href = this.getAttribute('href');
+            if (href) {
+                window.open(href, '_blank');
+            }
+            return false; // Prevent default behavior
+        });
+    });
+
     // Navbar scroll effect
     window.addEventListener('scroll', function() {
         if (window.scrollY > 50) {
